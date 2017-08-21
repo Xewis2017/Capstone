@@ -1,4 +1,4 @@
-/* Debug */
+/* ### Debug ### */
 /*div {
   border: 1px solid red;
 }
@@ -11,8 +11,11 @@ img {
   border: 2px solid green;
 }
 
-Text color:#55565E
-btn color:
+
+/* Color Palette
+text color: #55565E
+btn color: #9294A0
+header color: #626369
 nav text color: #9294A0
 hover color: #9e90b6
 block contrast: #D8D9DF
@@ -23,7 +26,6 @@ html {
   align-content: center;
   justify-content: center;
   font-family: 'Source Sans Pro','Alegreya Sans', 'Roboto', sans-serif;
-  /*color: #9294A0;*/
   color: #55565E;
   font-size: 16px;
   font-weight: 400;
@@ -33,9 +35,7 @@ html {
 body {
   display: flex;
   justify-content: center;
-margin: auto;
-  /*width: 100rem;*/
-
+  margin: auto;
 }
 
 .main {
@@ -71,12 +71,12 @@ margin: auto;
 .company {
   font-size: 1.2rem;
   font-weight: 600;
-  color: darkgrey;
+  color: #626369;
 }
 
 .company strong {
   font-weight:800;
-  color: black;
+  color: #626369;
 }
 
 .nav {
@@ -103,8 +103,6 @@ margin: auto;
   color: white;
 }
 
-
-
 .mob-nav {
   display: none;
 }
@@ -126,7 +124,6 @@ margin: auto;
 .content h1 {
   font-weight: 700;
   font-size: 2.6rem;
-/*  color: #9294A0;*/
   color: #626369;
 }
 
@@ -194,7 +191,7 @@ margin: auto;
   border: 1px solid white;
 }
 
-.contrast, #fisma {
+.contrast, #fisma, #guestlecture {
   background-color: #D8D9DF;
 }
 
@@ -222,10 +219,6 @@ margin: auto;
   border-bottom: 1px solid lightgrey;
 }
 
-#guestlecture{
-  background-color: lightgrey;
-}
-
 .info-text {
   width: 65%;
 }
@@ -251,6 +244,8 @@ margin: auto;
 .info-img-mob {
   display: none;
 }
+
+/*#### Learning Section #####*/
 
 #learning {
   display: block;
@@ -308,6 +303,7 @@ margin: auto;
     padding: 8px 16px;
 }
 
+/*#### Thesis Section #####*/
 
 #thesis {
   display: block;
@@ -335,7 +331,6 @@ margin: auto;
 }
 
 
-
 .thesis {
   display: flex;
 }
@@ -358,6 +353,7 @@ margin: auto;
   height: 35%;
 }
 
+/*#### Footer Section #####*/
 
 .footer {
   display: flex;
@@ -386,39 +382,6 @@ margin: auto;
   text-decoration: underline;
 
 }
-
-/*@media only screen and (max-width: 1000px) and (orientation: portrait) {
-    .content h1 {
-      font-size: 1.4rem;
-      color: blue;
-      margin-right: 16px;
-    }
-
-    .img-content h2 {
-      font-size: 1.2rem;
-      color: orange;
-    }
-
-    .content h3, .info-text h3, .course h3, .thesis-text h3{
-      font-size: 1rem;
-      color: red;
-    }
-
-    .course {
-      height: 12rem;
-    }
-
-    .course h4 {
-      font-size: 0.8rem;
-      color: red;
-
-    }
-
-    .content p, .thesis-text p, .course p, .info-text p, .img-content p {
-      font-size: 0.7rem;
-    }
-
-}*/
 
 @media only screen and (max-width: 980px) and (orientation: portrait) {
 
@@ -457,21 +420,17 @@ margin: auto;
 
 @media only screen and (max-width: 560px) and (orientation: portrait)  {
 
-  .header {
+  .header, .container {
     width: 100%;
   }
 
-  .container {
-    width: 100%;
-  }
-
-  .company {
+/* ### header elements ###*/
+  .company, .full-nav {
     display: none;
   }
 
-
-  .full-nav {
-    display: none;
+  .content p, .course p, .info-text p, .img-content p, .btn p {
+    font-size: 1rem;
   }
 
   .mob-nav {
@@ -503,7 +462,7 @@ margin: auto;
 
   .content h3 {
     margin: 32px 0px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     max-width: 100%;
   }
 
@@ -511,20 +470,18 @@ margin: auto;
     width: 90%;
     max-width: 90%;
     margin: 0;
-    background-color: lightgrey;
   }
 
-  #information .img-content {
+/* ### Hide information elements ###*/
+
+  #information .img-content,
+  .info-img  {
     display: none;
   }
 
   .info-sub {
     display: block;
     width: 100%
-  }
-
-  .info-img {
-      display: none;
   }
 
   .info-img-mob {
@@ -563,18 +520,14 @@ margin: auto;
     font-weight: 600;
     font-size: 1.8rem;
     padding: 1rem;
-    background-color: darkgrey;
+    color: white;
+    background-color: #626369;
   }
 
-  #learning .course h4 {
-    display: none;
-  }
-
-  #learning .course p {
-    display: none;
-  }
-
-  #learning .course img {
+/* ### Hide learning elements ###*/
+  #learning .course h4,
+  #learning .course p,
+  #learning .course img  {
     display: none;
   }
 
@@ -582,11 +535,10 @@ margin: auto;
     padding-bottom: 16px;
   }
 
-  #thesis .img-content h3 {
-    display: none;
-  }
-
-  #thesis .content {
+/* ### Hide Thesis elements ###*/
+  #thesis .img-content h3,
+    #thesis .content,
+      .footer a  {
     display: none;
   }
 
@@ -595,7 +547,5 @@ margin: auto;
     margin-top: 24px;
   }
 
-  .footer a {
-    display: none;
-  }
+
 }
