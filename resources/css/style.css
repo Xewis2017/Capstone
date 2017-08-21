@@ -10,13 +10,21 @@ li {
 img {
   border: 2px solid green;
 }
+
+Text color:#55565E
+btn color:
+nav text color: #9294A0
+hover color: #9e90b6
+block contrast: #D8D9DF
 */
 
 html {
   display: block;
   align-content: center;
   justify-content: center;
-  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro','Alegreya Sans', 'Roboto', sans-serif;
+  /*color: #9294A0;*/
+  color: #55565E;
   font-size: 16px;
   font-weight: 400;
   width: 100%;
@@ -84,14 +92,14 @@ margin: auto;
 }
 
 .nav a{
-    color: darkgrey;
+    color: #9294A0;
     text-decoration: none;
     transition: color 400ms 200ms ease-out,
       background-color 400ms 200ms ease-out;
 }
 
 .nav a:hover {
-  background-color: lightblue;
+  background-color: #9e90b6;
   color: white;
 }
 
@@ -118,6 +126,8 @@ margin: auto;
 .content h1 {
   font-weight: 700;
   font-size: 2.6rem;
+/*  color: #9294A0;*/
+  color: #626369;
 }
 
 .img-content h2 {
@@ -130,6 +140,7 @@ margin: auto;
 .info-text h3,
 .course h3 {
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .img-content {
@@ -141,10 +152,6 @@ margin: auto;
   align-items: flex-start;
   align-content: flex-start;
   justify-content: flex-start;
-  /*background-size: cover;
-  background-position: center;
-  background-image: url("../images/banner.jpg");
-  background-repeat: no-repeat;*/
 }
 
 .img-content p {
@@ -171,8 +178,9 @@ margin: auto;
   margin: 10% 0;
   padding: 8px;
   width: 70%;
-  background-color: darkgrey;
-  transition: color 500ms 200ms ease-out, background-color 500ms 200ms ease-out;
+  background-color: #9294A0;
+  transition: color 500ms 200ms ease-out,
+  background-color 500ms 200ms ease-out;
 }
 
 .btn a {
@@ -182,12 +190,12 @@ margin: auto;
 }
 
 .btn:hover {
-  color: orange;
-  background-color: lightgrey;
+  background-color: #9e90b6;
+  border: 1px solid white;
 }
 
-.contrast {
-  background-color: lightgrey;
+.contrast, #fisma {
+  background-color: #D8D9DF;
 }
 
 #banner .content h1 {
@@ -220,6 +228,19 @@ margin: auto;
 
 .info-text {
   width: 65%;
+}
+
+.info-text a{
+  color: #6c6fa2;
+  text-decoration: none;
+  transition: color 400ms 200ms ease-out,
+      text-decoration  400ms 200ms ease-out;
+}
+
+.info-text a:hover {
+  color: #9e90b6;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .info-img {
@@ -306,7 +327,6 @@ margin: auto;
 
 .thesis-text h3 {
   margin-left: 24px;
-  font-size: 2rem;
 }
 
 .thesis-text p {
@@ -315,10 +335,6 @@ margin: auto;
 }
 
 
-
-#fisma {
-  background-color: lightgrey;
-}
 
 .thesis {
   display: flex;
@@ -354,13 +370,92 @@ margin: auto;
 
 .footer p {
     padding: 16px 24px;
+
 }
 
 .footer a {
   padding: 16px;
+  text-decoration: none;
+  transition: color 400ms 200ms ease-out,
+      text-decoration  400ms 200ms ease-out;
 }
 
-@media only screen and (max-width: 480px) and (orientation: portrait)  {
+.footer a:hover {
+  color: #9e90b6;
+  font-weight: 600;
+  text-decoration: underline;
+
+}
+
+/*@media only screen and (max-width: 1000px) and (orientation: portrait) {
+    .content h1 {
+      font-size: 1.4rem;
+      color: blue;
+      margin-right: 16px;
+    }
+
+    .img-content h2 {
+      font-size: 1.2rem;
+      color: orange;
+    }
+
+    .content h3, .info-text h3, .course h3, .thesis-text h3{
+      font-size: 1rem;
+      color: red;
+    }
+
+    .course {
+      height: 12rem;
+    }
+
+    .course h4 {
+      font-size: 0.8rem;
+      color: red;
+
+    }
+
+    .content p, .thesis-text p, .course p, .info-text p, .img-content p {
+      font-size: 0.7rem;
+    }
+
+}*/
+
+@media only screen and (max-width: 980px) and (orientation: portrait) {
+
+  .content h1 {
+    font-size: 1.4rem;
+
+  }
+
+  .img-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .content h3, .info-text h3, .course h3{
+    font-size: 0.9rem;
+  }
+
+  .course {
+    height: 14rem;
+  }
+
+  .course h4 {
+    font-size: 0.7rem;
+  }
+
+  .content p, .thesis-text p, .course p, .info-text p, .img-content p, .footer p {
+    font-size: 0.7rem;
+  }
+
+  .nav a {
+    font-size: 0.8rem;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 560px) and (orientation: portrait)  {
 
   .header {
     width: 100%;
@@ -429,7 +524,7 @@ margin: auto;
   }
 
   .info-img {
-      display: none
+      display: none;
   }
 
   .info-img-mob {
@@ -503,29 +598,4 @@ margin: auto;
   .footer a {
     display: none;
   }
-}
-
-/*@media only screen and (max-width: 768px) and (orientation: portrait) {
-
-}*/
-
-@media only screen and (width: 1200px) and (orientation: portrait) {
-
-  .content h1 {
-    font-size: 2.2rem;
-    color: green;
-  }
-
-  .img-content h2 {
-    font-size: 2.0rem;
-    color: green;
-  }
-
-  .content h3,
-  .info-text h3,
-  .course h3 {
-    font-size: 1.8rem;
-    color: green;
-  }
-
 }
