@@ -91,7 +91,7 @@ body {
   padding: 8px;
 }
 
-.nav a{
+.nav a {
     color: #9294A0;
     text-decoration: none;
     transition: color 400ms 200ms ease-out,
@@ -101,6 +101,10 @@ body {
 .nav a:hover {
   background-color: #9e90b6;
   color: white;
+}
+
+.nav a:visited {
+  color: #413c4a;
 }
 
 .mob-nav {
@@ -189,6 +193,10 @@ body {
 .btn:hover {
   background-color: #9e90b6;
   border: 1px solid white;
+}
+
+.btn:visited {
+  color: #413c4a;
 }
 
 .contrast, #fisma, #guestlecture {
